@@ -1,0 +1,195 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(136, 136, 136);
+}
+
+.top {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(114, 40, 114);
+}
+
+.center {
+    width: 1280px;
+    margin: 0 auto;
+}
+
+.nav img {
+    width: 75px;
+    margin: 10px;
+}
+
+.navRight {
+    float: right;
+    margin: 25px 0px;
+}
+
+.navRight .link {
+    display: inline-block;
+    width: 120px;
+    height: 50px;
+    line-height: 50px;
+    background-color: #fff;
+    text-align: center;
+    text-decoration: none;
+    color: rgb(119, 119, 119);
+}
+
+.dscription {
+    height: 490px;
+    background-color: rgb(170, 170, 170);
+    position: relative;
+}
+
+.dscLeft {
+    width: 800px;
+    height: 290px;
+    position: absolute;
+    top: 140px;
+    left: 70px;
+    color: #fff;
+}
+
+.dscription .dscLeft .dsc {
+    display: inline-block;
+    width: 800px;
+    font-size: 24px;
+    text-align: right;
+}
+
+.dscLeft .white {
+    margin-top: 50px;
+    margin-right: 66px;
+    float: right;
+    width: 560px;
+    height: 4px;
+    background-color: #fff;
+}
+
+.dscLeft .fenge {
+    display: inline-block;
+    font-size: 30px;
+    position: absolute;
+    right: 0;
+    top: 126px;
+}
+
+.dscLeft .web {
+    position: absolute;
+    right: 0;
+    top: 196px;
+    font-size: 24px;
+}
+
+.dscRight img {
+    border-radius: 60%;
+    width: 260px;
+    position: absolute;
+    right: 80px;
+    top: 140px;
+}
+
+.port {
+    color: rgb(136, 136, 136);
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+}
+
+.port h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.port .black1 {
+    position: absolute;
+    left: 270px;
+    margin-right: 24px;
+    width: 280px;
+    height: 4px;
+    background-color: rgb(136, 136, 136);
+}
+
+.port .black2 {
+    position: absolute;
+    top: 132px;
+    right: 236px;
+    margin-right: 24px;
+    margin-right: 30px;
+    width: 280px;
+    height: 4px;
+    background-color: rgb(136, 136, 136);
+}
+
+.port .fenkai {
+    position: absolute;
+    top: 112px;
+    left: 550px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.port ul li {
+    display: inline-block;
+    list-style: none;
+    margin-top: 50px;
+}
+
+.port ul li img {
+    width: 500px;
+}
+
+.port .gray {
+    width: 100%;
+    font-size: 4px;
+    color: rgb(207, 207, 207);
+    margin-top: 32px;
+    text-shadow: 2px 2px 4px #000000;
+}
+
+.contact {
+    color: rgb(136, 136, 136);
+    text-align: center;
+    background-color: #fff;
+    position: relative;
+    height: 1000px;
+}
+
+.contact h2 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.contact .black1 {
+    position: absolute;
+    left: 270px;
+    margin-right: 24px;
+    width: 280px;
+    height: 4px;
+    background-color: rgb(136, 136, 136);
+}
+
+.contact .black2 {
+    position: absolute;
+    top: 132px;
+    right: 236px;
+    margin-right: 24px;
+    margin-right: 30px;
+    width: 280px;
+    height: 4px;
+    background-color: rgb(136, 136, 136);
+}
+
+.contact .fenkai {
+    position: absolute;
+    top: 112px;
+    left: 550px;
+    display: inline-block;
+    font-size: 30px;
+}
+
+.contact .left {}
