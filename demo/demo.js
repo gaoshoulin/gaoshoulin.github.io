@@ -1,4 +1,44 @@
 $(function() {
+    $(document).mousemove(function() {
+        // console.log($(document).scrollTop());
+
+        var len = $('body').scrollTop();
+        // alert($('.port').offset().top);
+        if (len >= 0 && len <= $('.port').offset().top - 60) {
+            $('.link').eq(0).addClass('active').removeClass('unactive').siblings('.link').removeClass('active').addClass('unactive');
+            // alert('sdgh');
+            // console.log('sfhgj');
+        } else if (len >= $('.port').offset().top - 60 && len <= $('.contact').offset().top - 60) {
+            $('.link').eq(1).addClass('active').removeClass('unactive').siblings('.link').removeClass('active').addClass('unactive');
+        } else if (len > $('.contact').offset().top - 60) {
+            $('.link').eq(2).addClass('active').removeClass('unactive').siblings('.link').removeClass('active').addClass('unactive');
+        }
+    });
+
+
+
+    $('.link').click(function() {
+        $(this).addClass('active').removeClass('unactive').siblings('.link').removeClass('active').addClass('unactive');
+    });
+
+    $('.link').eq(0).click(function() {
+        var target_top1 = $('.dscription').offset().top;
+        $("html,body").animate({ scrollTop: target_top1 }, 1000); //带滑动效果的跳转
+        // alert(target_top1);
+    });
+
+    $('.link').eq(1).click(function() {
+        var target_top2 = $('.port').offset().top;
+        $("html,body").animate({ scrollTop: target_top2 - 60 }, 1000); //带滑动效果的跳转
+        // alert(target_top2);
+    });
+
+    $('.link').eq(2).click(function() {
+        var target_top3 = $('.contact').offset().top;
+        $("html,body").animate({ scrollTop: target_top3 - 60 }, 2000); //带滑动效果的跳转
+        // alert(target_top3);
+    });
+
     $('#name').blur(function() {
         var len1 = $("#name").val().length;
         if (len1 > 0) {
@@ -35,8 +75,4 @@ $(function() {
         }
     });
 
-    /* if ($(" #name ").val().length > 0) {
-        // $('.name:eq(0)').css('display', 'block');
-        alert('21');
-    } */
 });
