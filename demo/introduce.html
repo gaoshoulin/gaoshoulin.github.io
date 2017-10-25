@@ -1,3 +1,7 @@
+<!-- 
+    bug1:
+    contact里面的失去焦点事件,繁琐至极。
+ -->
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,6 +11,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link href="demo.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript" src="jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="demo.js"></script>
 </head>
 
 <body>
@@ -25,61 +31,92 @@
         <div class="center dscription">
             <div class="dscLeft">
                 <span class="dsc">
-              Front-End Developer and UX/UI designer, with practical experience in project management, branding strategy, and creative direction; devoted to functional programming and information architecture.
+                    Although he is not a professional, but very hard, with the most professional attitude, is committed to using technology to change the world, and the partners decided to do something different, devoted to functional programming and information architecture.
             </span>
                 <hr class="white" />
                 <span class="fenge">&lt;/&gt;</span>
                 <div class="web">
-                    Web Developer - User Experience Designer - Graphic Artist
+                    Web Developer - User Experience Designer - Geek
                 </div>
             </div>
             <iv class="dscRight">
-                <img src="http://qlip.in/images/avatar.jpg" alt="">
+                <img src="img/4.jpg" alt="">
             </iv>
         </div>
-        <div class="port">
+        <div class="center port">
             <h2>PORTFOLIO</h2>
             <hr class="black1" />
             <span class="fenkai">&lt;/&gt;</span>
             <hr class="black2" />
             <ul>
                 <li>
-                    <img src="http://qlip.in/images/YMCA-Realtor-Donation-3.jpg" alt="">
-                    <img src="http://qlip.in/images/webcaballero.jpg" alt="">
+                    <img src="img/1.png" alt="">
+                    <img src="img/2.png" alt="">
                 </li>
                 <li>
-                    <img src="http://qlip.in/images/YMCA-Realtor-Donation-3.jpg" alt="">
-                    <img src="http://qlip.in/images/webcaballero.jpg" alt="">
+                    <img src="img/3.png" alt="">
+                    <img src="img/4.png" alt="">
                 </li>
                 <li>
-                    <img src="http://qlip.in/images/YMCA-Realtor-Donation-3.jpg" alt="">
-                    <img src="http://qlip.in/images/webcaballero.jpg" alt="">
+                    <img src="img/5.png" alt="">
+                    <img src="img/6.png" alt="">
                 </li>
             </ul>
             <hr class="gray" />
         </div>
-        <div class="contact">
+        <div class="center contact">
             <h2>CONTACT ME</h2>
             <hr class="black1" />
             <span class="fenkai">&lt;/&gt;</span>
             <hr class="black2" />
             <div class="left">
                 <form action="">
-                    <ul>
-                        <li>
-                            <label for="name">Name</label>
-                            <input id="name" type="text" placeholder="name">
-                        </li>
-                        <li></li>
-                        <li></li>
-                        <li></li>
-                    </ul>
-
+                    <div class="form-item">
+                        <label class="name" for="name">Name</label>
+                        <input id="name" type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-item">
+                        <label class="email" for="email">Email Address</label>
+                        <input id="email" type="text" placeholder="Email Address" required>
+                    </div>
+                    <div class="form-item">
+                        <label class="phone" for="phone">Phone Number</label>
+                        <input id="phone" type="text" placeholder="Phone Number" required>
+                    </div>
+                    <div class="form-item">
+                        <label class="message" for="message">Message</label>
+                        <textarea id="message" rows="6" cols="23" placeholder="Message"></textarea>
+                    </div>
+                    <button>Send</button>
                 </form>
+            </div>
+            <div class="right">
+                Want to get in touch with me? Be it to request more info about myself or my experience, to ask for my resume,just feel free to drop me a line anytime.
+                <span>        
+                I promise to reply A.S.A.P.
+                </span>
             </div>
         </div>
     </div>
-
+    <div class="bottom">
+        <div class="center btm">
+            <div class="btmL">
+                <h3>ABOUT THIS PAGE</h3>
+                <div class="me">
+                    made in china on two o'clock in the afternoon of October 25, 2017 by <a href="https://codepen.io/dashboard/">Nightmare</a>.
+                </div>
+            </div>
+            <iv class="btmR">
+                <h3>ABOUT My Plan</h3>
+                <div class="plan">
+                    My purpose is to constantly improve themselves and achieve self challenge on the premise of meeting the needs of users.
+                </div>
+            </iv>
+        </div>
+    </div>
+    <div class="end">
+        qlip © 2017. All Rights Reversed
+    </div>
 </body>
 
 </html>
